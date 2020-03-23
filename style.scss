@@ -71,6 +71,9 @@ body {
   @media only screen and (max-width: 62.5em) {
     //1000px
     height: 80vh;
+  }
+  @media only screen and (max-width: 37.5em) {
+    //600px
     padding: 2rem;
   }
 }
@@ -78,11 +81,17 @@ body {
 ////***** PROJECTS SECTION *****
 .projects {
   background-color: $navy;
+  @media only screen and (max-width: 62.5em) {
+    //1000px
+    padding-bottom: 5rem;
+  }
+
   &__heading-container {
     padding: 5rem 0 0 5rem;
-    @media only screen and (max-width: 62.5em) {
-      //1000px
-      padding: 2rem 0 0 2rem;
+
+    @media only screen and (max-width: 37.5em) {
+      //600px
+      padding: 4rem 0 2rem 2rem;
     }
   }
 }
@@ -90,10 +99,15 @@ body {
   width: 100%;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(34.5rem, 1fr));
-  grid-gap: 3rem;
-  padding: 3rem;
-  @media only screen and (max-width: 62.5em) {
-    //1000px
+  grid-gap: 5rem;
+  padding: 5rem;
+  // @media only screen and (max-width: 62.5em) {
+  //   //1000px
+  //   grid-gap: 7rem;
+  //   padding: 7rem;
+  // }
+  @media only screen and (max-width: 37.5em) {
+    //600px
     grid-gap: 3rem;
     padding: 2rem;
   }
@@ -124,9 +138,13 @@ body {
 .about {
   background-color: $white;
   padding: 5rem;
-  @media only screen and (max-width: 62.5em) {
-    //1000px
-    padding: 4rem 2rem;
+  // @media only screen and (max-width: 62.5em) {
+  //   //1000px
+  //   padding: 7rem;
+  // }
+  @media only screen and (max-width: 37.5em) {
+    //600px
+    padding: 4rem;
   }
 }
 
@@ -140,8 +158,8 @@ body {
     padding: 5rem;
     width: 100%;
     text-align: center;
-    @media only screen and (max-width: 62.5em) {
-      //1000px
+    @media only screen and (max-width: 37.5em) {
+      //600px
       padding: 4rem 2rem;
     }
   }
