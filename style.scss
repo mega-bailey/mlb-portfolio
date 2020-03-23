@@ -70,7 +70,8 @@ body {
   }
   @media only screen and (max-width: 62.5em) {
     //1000px
-    height: 70vh;
+    height: 80vh;
+    padding: 2rem;
   }
 }
 
@@ -79,14 +80,23 @@ body {
   background-color: $navy;
   &__heading-container {
     padding: 5rem 0 0 5rem;
+    @media only screen and (max-width: 62.5em) {
+      //1000px
+      padding: 2rem 0 0 2rem;
+    }
   }
 }
 .grid-gallery {
   width: 100%;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(34.5rem, 1fr));
-  grid-gap: 5rem;
-  padding: 5rem;
+  grid-gap: 3rem;
+  padding: 3rem;
+  @media only screen and (max-width: 62.5em) {
+    //1000px
+    grid-gap: 3rem;
+    padding: 2rem;
+  }
 }
 .project-box {
   width: 100%;
@@ -114,6 +124,10 @@ body {
 .about {
   background-color: $white;
   padding: 5rem;
+  @media only screen and (max-width: 62.5em) {
+    //1000px
+    padding: 4rem 2rem;
+  }
 }
 
 ///***** CONTACT SECTION *****
@@ -126,6 +140,10 @@ body {
     padding: 5rem;
     width: 100%;
     text-align: center;
+    @media only screen and (max-width: 62.5em) {
+      //1000px
+      padding: 4rem 2rem;
+    }
   }
 }
 
@@ -162,8 +180,8 @@ body {
     font-size: 7rem;
   }
   @media only screen and (max-width: 37.5em) {
-    //1000px
-    font-size: 5rem;
+    //600px
+    font-size: 4rem;
   }
 }
 .heading-2 {
@@ -174,9 +192,9 @@ body {
     //1000px
     font-size: 3.5rem;
   }
-  @media only screen and (max-width: 62.5em) {
-    //1000px
-    font-size: 3rem;
+  @media only screen and (max-width: 37.5em) {
+    //600px
+    font-size: 2.5rem;
   }
 }
 .heading-3 {
