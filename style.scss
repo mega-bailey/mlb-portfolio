@@ -155,18 +155,37 @@ body {
 .heading-1 {
   color: $white;
   font-family: $font-display;
-  font-size: 4rem;
+  font-size: 4.2rem;
   font-weight: normal;
+  @media only screen and (max-width: 62.5em) {
+    //1000px
+    font-size: 7rem;
+  }
+  @media only screen and (max-width: 37.5em) {
+    //1000px
+    font-size: 5rem;
+  }
 }
 .heading-2 {
   color: $white;
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: 300;
+  @media only screen and (max-width: 62.5em) {
+    //1000px
+    font-size: 3.5rem;
+  }
+  @media only screen and (max-width: 62.5em) {
+    //1000px
+    font-size: 3rem;
+  }
 }
 .heading-3 {
   color: $navy;
   font-family: $font-primary;
   font-weight: 300;
+  &--white {
+    color: $white;
+  }
 }
 
 .paragraph {
