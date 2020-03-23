@@ -21,23 +21,41 @@
     <div class="left-container">
       <!-- SIDEBAR -->
       <section class="sidebar">
-        <div class="sidebar__text">
-          <h1 class="heading-1">
-            Megan Bailey
-          </h1>
+        <div class="sidebar__wrapper">
+          <div class="sidebar__text">
+            <h1 class="heading-1">
+              Megan Bailey
+            </h1>
 
-          <h2 class="heading-2">
-            Self-taught full-stack web developer.
-          </h2>
-        </div>
+            <h2 class="heading-2">
+              Front-end web developer
+            </h2>
+          </div>
 
-        <a href="#contact" target="_blank">
-          <button class="btn btn-md ">Say Hi</button>
-        </a>
-        <div class="social-links">
-          <a href="#" class="social-link fab fa-github"> </a>
-          <a href="#" class="social-link fab fa-codepen"></a>
-          <a href="#" class="social-link fab fa-free-code-camp"></a>
+          <a
+            href="mailto:megan-bailey@outlook.com?Subject=Hello%20from%20website"
+            target="_blank"
+          >
+            <span class="btn btn-md ">Say Hello &rarr;</span>
+          </a>
+          <div class="social-links">
+            <a
+              href="https://github.com/mega-bailey"
+              target="_blank"
+              class="social-link fab fa-github"
+            >
+            </a>
+            <a
+              href="https://codepen.io/mega-bailey"
+              target="_blank"
+              class="social-link fab fa-codepen"
+            ></a>
+            <a
+              href="https://www.freecodecamp.org/megan-bailey"
+              target="_blank"
+              class="social-link fab fa-free-code-camp"
+            ></a>
+          </div>
         </div>
       </section>
     </div>
@@ -62,15 +80,15 @@
                   HTML / SCSS / JS Parallax
                 </figcaption>
               </div>
-              <div class="project-box__details--buttons">
+              <div class="project-box__details--spans">
                 <a href="https://play-atx.herokuapp.com/" target="_blank">
-                  <button class="btn btn-sm btn-sm--live">Live</button></a
+                  <span class="btn btn-sm btn-sm--live">Live</span></a
                 >
                 <a
                   href="https://github.com/mega-bailey/play-atx"
                   target="_blank"
                 >
-                  <button class="btn btn-sm btn-sm--git">Code</button></a
+                  <span class="btn btn-sm btn-sm--git">Code</span></a
                 >
               </div>
             </div>
@@ -90,12 +108,12 @@
                   Ecommerce site
                 </figcaption>
               </div>
-              <div class="project-box__details--buttons">
+              <div class="project-box__details--spans">
                 <a href="https://6sense.netlify.com/" target="_blank">
-                  <button class="btn btn-sm btn-sm--live">Live</button></a
+                  <span class="btn btn-sm btn-sm--live">Live</span></a
                 >
                 <a href="https://github.com/mega-bailey/6sense" target="_blank">
-                  <button class="btn btn-sm btn-sm--git">Code</button></a
+                  <span class="btn btn-sm btn-sm--git">Code</span></a
                 >
               </div>
             </div>
@@ -137,7 +155,7 @@
             <div class="project-box__details">
               <div class="project-box__figcaption-container">
                 <figcaption class="project-box__details--text">
-                  HTML / CSS / JS & JQuery
+                  HTML / SCSS / JS & JQuery
                 </figcaption>
               </div>
               <div class="project-box__details--buttons">
@@ -237,7 +255,7 @@
                   href="https://github.com/mega-bailey/lupins-fine-chocolate"
                   target="_blank"
                 >
-                  <button class="btn btn-sm btn-sm--git">Code</button></a
+                  <span class="btn btn-sm btn-sm--git">Code</span></a
                 >
               </div>
             </div>
@@ -255,18 +273,18 @@
                 </figcaption>
               </div>
 
-              <div class="project-box__details--buttons">
+              <div class="project-box__details--spans">
                 <a
                   href="https://mega-bailey.github.io/union-hill/"
                   target="_blank"
                 >
-                  <button class="btn btn-sm btn-sm--live">Live</button></a
+                  <span class="btn btn-sm btn-sm--live">Live</span></a
                 >
                 <a
                   href="https://github.com/mega-bailey/union-hill"
                   target="_blank"
                 >
-                  <button class="btn btn-sm btn-sm--git">Code</button></a
+                  <span class="btn btn-sm btn-sm--git">Code</span></a
                 >
               </div>
             </div>
@@ -278,11 +296,14 @@
       <section class="about">
         <h3 class="heading-3 margin-bottom-sm">A quick rundown on me:</h3>
         <p class="paragraph">
-          Self-taught mainly utilizing Udemy, FreeCodeCamp, Wes Bos, Traversy
-          Media, and YouTube.
+          I am self-taught mainly utilizing Udemy, FreeCodeCamp, Wes Bos,
+          Traversy Media, and YouTube. My end-goal is to be a full-stack web
+          developer.
         </p>
         <p class="paragraph">
-          I enjoy working with databases, especially MongoDB.
+          Currently working on improving my JS and JQuery skills and learning
+          the MERN stack. I enjoy working with databases so I'm excited to dive
+          deeper into MongoDB.
         </p>
         <p class="paragraph">
           Previous work experience in administrative roles, artist management,
@@ -291,8 +312,7 @@
         <p class="paragraph">
           Personal stuff - I'm the kind of person who is never bored. I read
           books on coding and psychology, play around in Photoshop, workout, and
-          run often. I love a good murder mystery. I constantly have music on:
-          jazz, 80's hits, or chill/electronic.
+          run often. And I love a good murder mystery.
         </p>
         <p class="paragraph">
           In a <img src="img/nut.svg" class="nut" />, I'm a levelheaded, sponge
@@ -302,16 +322,31 @@
 
       <!-- CONTACT -->
       <section class="contact">
-        <div class="contact__left">
+        <div class="contact__text">
           <h3 class="heading-3">If you'd like to say hi, or work with me:</h3>
-          <button class="btn btn-md">Shoot me an email</button>
-        </div>
-        <div class="contact__right">
-          <h3 class="heading-3">Or hit me up online:</h3>
+          <a
+            href="mailto:megan-bailey@outlook.com?Subject=Hello%20from%20website"
+            target="_blank"
+          >
+            <span class="btn btn-md ">Shoot me an email</span>
+          </a>
           <div class="social-links social-links__contact">
-            <a href="#" class="social-link fab fa-github"> </a>
-            <a href="#" class="social-link fab fa-codepen"></a>
-            <a href="#" class="social-link fab fa-free-code-camp"></a>
+            <a
+              href="https://github.com/mega-bailey"
+              target="_blank"
+              class="social-link fab fa-github"
+            >
+            </a>
+            <a
+              href="https://codepen.io/mega-bailey"
+              target="_blank"
+              class="social-link fab fa-codepen"
+            ></a>
+            <a
+              href="https://www.freecodecamp.org/megan-bailey"
+              target="_blank"
+              class="social-link fab fa-free-code-camp"
+            ></a>
           </div>
         </div>
       </section>

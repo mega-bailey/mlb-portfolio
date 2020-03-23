@@ -17,6 +17,9 @@ $default-font-size: 1.6rem;
 html {
   box-sizing: border-box;
   font-size: 62.5%;
+  @media only screen and (max-width: 75em) {
+    font-size: 56.25%;
+  }
 }
 
 body {
@@ -35,6 +38,11 @@ body {
   display: flex;
   align-items: center;
   background-color: #2f52e0;
+  @media only screen and (max-width: 62.5em) {
+    //1000px
+    position: relative;
+    width: 100%;
+  }
 }
 
 .right-container {
@@ -43,11 +51,27 @@ body {
   max-width: 1200px;
   margin-left: 35%;
   overflow: visible;
+  @media only screen and (max-width: 62.5em) {
+    //1000px
+    position: relative;
+    width: 100%;
+    margin-left: 0;
+  }
 }
 
 ////***** SIDEBAR SECTION *****
 .sidebar {
   padding: 5rem;
+  &__wrapper {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  @media only screen and (max-width: 62.5em) {
+    //1000px
+    height: 70vh;
+  }
 }
 
 ////***** PROJECTS SECTION *****
@@ -60,7 +84,7 @@ body {
 .grid-gallery {
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(34.5rem, 1fr));
   grid-gap: 5rem;
   padding: 5rem;
 }
@@ -77,12 +101,10 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 2rem 0;
+
     &--text {
       font-size: 1.3rem;
       font-weight: 300;
-    }
-    &--caption {
-      font-size: 1.3rem;
     }
   }
 }
@@ -97,17 +119,12 @@ body {
 ///***** CONTACT SECTION *****
 .contact {
   width: 100%;
-  display: flex;
-  &__left {
+
+  &__text {
     background-color: $teal;
+    background: linear-gradient(45deg, $teal 50%, $yellow 50%);
     padding: 5rem;
     width: 100%;
-    text-align: center;
-  }
-  &__right {
-    width: 100%;
-    background-color: $yellow;
-    padding: 5rem;
     text-align: center;
   }
 }
@@ -156,7 +173,7 @@ body {
   font-family: $font-primary;
   font-size: $default-font-size;
   font-weight: 300;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 .margin-bottom-sm {
@@ -174,6 +191,7 @@ body {
 }
 
 .btn-sm {
+  display: inline-block;
   border-radius: 3px;
   background: $navy;
   padding: 1rem 1.5rem;
@@ -185,12 +203,12 @@ body {
     box-shadow: 0 5px 5px rgba($navy, 0.1);
   }
   &--live {
-    margin-right: 5px;
+    margin-right: 3px;
   }
 }
 
 .btn-md {
-  border-radius: 4rem;
+  display: inline-block;
   font-size: 1.6rem;
   font-weight: 300;
   color: $white;
@@ -198,6 +216,7 @@ body {
   padding: 1.5rem 6rem;
   margin: 3rem 0;
   background-color: $orange;
+  border: 1px solid $orange;
   &:hover {
     box-shadow: 0 5px 5px rgba($navy, 0.1);
     background-color: darken($orange, 6);
@@ -205,11 +224,11 @@ body {
 }
 
 .social-links {
-  width: 20rem;
+  width: 18rem;
   display: flex;
   justify-content: space-between;
   &__contact {
-    margin: 4rem auto;
+    margin: 0 auto;
   }
 }
 
