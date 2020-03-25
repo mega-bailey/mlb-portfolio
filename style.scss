@@ -114,7 +114,6 @@ body {
   background-color: $white;
   &__img {
     max-width: 100%;
-    border-radius: 3px;
   }
   &__details {
     display: flex;
@@ -229,7 +228,6 @@ body {
 }
 
 //***** BUTTONS *****
-
 .btn {
   border: none;
   box-shadow: 0 5px 5px rgba($navy, 0.2);
@@ -240,7 +238,6 @@ body {
 
 .btn-sm {
   display: inline-block;
-  border-radius: 3px;
   background: $navy;
   padding: 1rem 1.5rem;
   color: $white;
