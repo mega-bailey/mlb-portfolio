@@ -235,12 +235,13 @@ body {
   cursor: pointer;
   outline: none;
   transition: all 0.2s ease-in;
+  text-transform: capitalize;
 }
 
 .btn-sm {
   display: inline-block;
   background: $navy;
-  padding: 1rem 1.5rem;
+  padding: 1rem 1.2rem;
   color: $white;
   font-size: 1rem;
   &:hover {
@@ -248,7 +249,7 @@ body {
     color: $navy;
     box-shadow: 0 5px 5px rgba($navy, 0.1);
   }
-  &--live {
+  &--demo {
     margin-right: 3px;
   }
 }
