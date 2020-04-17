@@ -13,27 +13,25 @@
       src="https://kit.fontawesome.com/88f1541563.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="icon" type="image/png" href="img/mb-logo-mont.png" />
+    <link rel="icon" type="image/png" href="img/mb-logo-mont-clear.png" />
     <link rel="stylesheet" href="dist/css/style.min.css" />
     <title>Megan Bailey | Web Developer</title>
   </head>
   <body>
     <div class="left-container">
       <!-- SIDEBAR -->
-      <section class="sidebar">
-        <div class="navbar">
-          <ul class="navbar-list">
-            <li class="navbar-item navbar-item--projects">
-              <i class="fas fa-circle"></i>
-            </li>
-            <li class="navbar-item navbar-item--about">
-              <i class="fas fa-circle"></i>
-            </li>
-            <li class="navbar-item navbar-item--contact">
-              <i class="fas fa-circle"></i>
-            </li>
-          </ul>
+
+      <navbar id="navbar">
+        <div class="dropdown">
+          <a href="#main"><i class="far fa-circle navbar--icon"></i></a>
+          <div class="navbar--content">
+            <a href="#projects" class="navbar--link">Projects</a>
+            <a href="#about" class="navbar--link">About</a>
+            <a href="#contact" class="navbar--link">Contact</a>
+          </div>
         </div>
+      </navbar>
+      <section id="main" class="sidebar">
         <div class="sidebar__wrapper">
           <div class="sidebar__text">
             <ul class="heading-1-list">
@@ -49,11 +47,16 @@
               <li class="heading-1 letter-10">e</li>
               <li class="heading-1 letter-11">y</li>
             </ul>
-
             <h2 class="heading-2">
               Front-End Web Developer
             </h2>
           </div>
+          <a
+            href="mailto:megan-bailey@outlook.com?Subject=Hello%20from%20website"
+            target="_blank"
+          >
+            <span class="btn btn-md">Say Hello &rarr;</span>
+          </a>
           <div class="social-links">
             <a
               href="https://github.com/mega-bailey"
@@ -72,19 +75,13 @@
               class="social-link fab fa-free-code-camp"
             ></a>
           </div>
-          <a
-            href="mailto:megan-bailey@outlook.com?Subject=Hello%20from%20website"
-            target="_blank"
-          >
-            <span class="btn btn-md ">Say Hello &rarr;</span>
-          </a>
         </div>
       </section>
     </div>
 
     <!-- PROJECTS -->
     <section class="right-container">
-      <section class="projects">
+      <section id="projects" class="projects">
         <div class="projects__heading-container">
           <h3 class="heading-3 heading-3--white">A few things I've built:</h3>
         </div>
@@ -321,7 +318,7 @@
       </section>
 
       <!-- ABOUT -->
-      <section class="about">
+      <section id="about" class="about">
         <h3 class="heading-3 margin-bottom-sm">A quick rundown on me:</h3>
         <p class="paragraph">
           I am self-taught mainly utilizing Udemy, Wes Bos, Traversy Media,
@@ -350,14 +347,14 @@
       </section>
 
       <!-- CONTACT -->
-      <section class="contact">
+      <section id="contact" class="contact">
         <div class="contact__text">
           <h3 class="heading-3">If you'd like to say hi, or work with me:</h3>
           <a
             href="mailto:megan-bailey@outlook.com?Subject=Hello%20from%20website"
             target="_blank"
           >
-            <span class="btn btn-md ">Shoot me an email &rarr;</span>
+            <span class="btn btn-md">Shoot me an email &rarr;</span>
           </a>
           <div class="social-links social-links__contact">
             <a
