@@ -6,7 +6,7 @@ $orange: #ff715b;
 $yellow: #f9cb40;
 
 $font-primary: 'Open Sans', sans-serif;
-$font-display: 'Yeseva One', cursive;
+$font-display: 'Montserrat', sans-serif;
 $default-font-size: 1.6rem;
 
 * {
@@ -19,6 +19,7 @@ html {
   box-sizing: border-box;
   font-size: 62.5%;
   @media only screen and (max-width: 75em) {
+    //1200
     font-size: 56.25%;
   }
 }
@@ -30,11 +31,12 @@ body {
   color: $navy;
 }
 
+////***** CONTAINERS *****
 .left-container {
   position: fixed;
   top: 0;
   left: 0;
-  width: 35%;
+  width: 38%;
   height: 100%;
   display: flex;
   align-items: center;
@@ -48,10 +50,11 @@ body {
 
 .right-container {
   position: static;
-  width: 65%;
+  width: 62%;
   max-width: 1200px;
-  margin-left: 35%;
+  margin-left: 38%;
   overflow: visible;
+
   @media only screen and (max-width: 62.5em) {
     //1000px
     position: relative;
@@ -76,6 +79,27 @@ body {
   @media only screen and (max-width: 37.5em) {
     //600px
     padding: 2rem;
+  }
+}
+.heading-1-list {
+  display: flex;
+  list-style-type: none;
+}
+
+////***** NAVBAR SECTION *****
+.navbar-list {
+  position: fixed;
+  top: 0;
+  list-style-type: none;
+  width: 6rem;
+  display: flex;
+  justify-content: space-between;
+}
+.fa-circle {
+  cursor: pointer;
+  color: $white;
+  &:hover {
+    color: blue;
   }
 }
 
@@ -184,28 +208,54 @@ body {
 .heading-1 {
   color: $white;
   font-family: $font-display;
-  font-size: 4.2rem;
-  font-weight: normal;
+  font-weight: 200;
+  font-size: 4.4rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  @media only screen and (max-width: 75em) {
+    //1200
+    font-size: 4rem;
+  }
   @media only screen and (max-width: 62.5em) {
     //1000px
-    font-size: 7rem;
+    font-size: 6rem;
   }
   @media only screen and (max-width: 37.5em) {
     //600px
     font-size: 4rem;
   }
 }
+.letter-1 {
+  color: #c0cff0;
+}
+.letter-5 {
+  color: #1bcb22;
+  margin-right: 2rem;
+}
+.letter-4 {
+  color: #d7eb3a;
+}
+.letter-7 {
+  color: #244049;
+}
+.letter-8 {
+  color: #30d09f;
+}
+.letter-11 {
+  color: #e6bb3a;
+}
 .heading-2 {
   color: $white;
   font-size: 2.3rem;
   font-weight: 300;
+  margin-bottom: 2rem;
   @media only screen and (max-width: 62.5em) {
     //1000px
     font-size: 3rem;
   }
   @media only screen and (max-width: 37.5em) {
     //600px
-    font-size: 2.5rem;
+    font-size: 2.3rem;
   }
 }
 .heading-3 {
@@ -271,7 +321,7 @@ body {
 }
 
 .social-links {
-  width: 18rem;
+  width: 13rem;
   display: flex;
   justify-content: space-between;
   &__contact {
@@ -280,7 +330,7 @@ body {
 }
 
 .social-link {
-  font-size: 2.5rem;
+  font-size: 2.3rem;
   text-decoration: none;
   color: $white;
   &:hover {
