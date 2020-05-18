@@ -347,9 +347,12 @@ body {
 
 .social-links {
   width: 13rem;
-  display: flex;
-  justify-content: space-between;
 
+  &__left-side {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 2rem;
+  }
   &__contact {
     margin: 0 auto;
   }
@@ -362,6 +365,9 @@ body {
   &:hover {
     color: darken($white, 10);
     text-decoration: none;
+  }
+  &:not(:last-child) {
+    margin-right: 2rem;
   }
 }
 
